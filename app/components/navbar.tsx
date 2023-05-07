@@ -5,9 +5,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "/", current: false },
-  { name: "About", href: "/#", current: false },
-  { name: "Projects", href: "/projects", current: false },
+  { name: "Home", href: "/#home", current: false },
+  { name: "About", href: "/#about", current: false },
+  { name: "Projects", href: "/#projects", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -37,6 +37,7 @@ const Navbar = () => {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
+                        scroll={true}
                         key={item.name}
                         href={item.href}
                         className={classNames(
