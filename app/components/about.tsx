@@ -68,13 +68,14 @@ const About = () => {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                Hello I'm Ruben Castro Espinoza I'm a fullstack software
-                engineer currently working for Northop Grumman. I graduated from
-                Lehigh University with a bachelors in Computer Engineering and I
-                have a continuing education certificate in Machine Learning from
-                UCSD. I'm passionate about software development and love to
-                collaborate with others to tackle complex problems. In my free
-                time I like to do the following activities.
+                Hello I&apos;m Ruben Castro Espinoza I&apos;m a fullstack
+                software engineer currently working for Northop Grumman. I
+                graduated from Lehigh University with a bachelors in Computer
+                Engineering and I have a continuing education certificate in
+                Machine Learning from UCSD. I&apos;m passionate about software
+                development and love to collaborate with others to tackle
+                complex problems. In my free time I like to do the following
+                activities.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
@@ -126,8 +127,8 @@ const About = () => {
                     <strong className="font-semibold text-gray-900">
                       Travel
                     </strong>{" "}
-                    I love to travel. I've been to 22 states, 8 countries and
-                    counting.
+                    I love to travel. I&apos;ve been to 22 states, 8 countries
+                    and counting.
                   </span>
                 </li>
               </ul>

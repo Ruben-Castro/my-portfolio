@@ -24,7 +24,7 @@ const Hero = () => {
               Ruben Castro Espinoza
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Hi I'm Ruben, a fullstack software engineer with 4 years of
+              Hi I&apos;m Ruben, a fullstack software engineer with 4 years of
               professional experience. If you like my work feel free to reach
               out on LinkedIn with potential job offers.
             </p>
