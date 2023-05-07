@@ -2,7 +2,7 @@ import React from "react";
 interface Props {
   title: string;
   description: string;
-  img: string;
+  img: StaticImageData;
   alt: string;
   githubLink: string;
   liveLink: string;
@@ -10,7 +10,8 @@ interface Props {
 
 import { AiOutlineGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 const ProjectCard = ({
   title,
   description,
@@ -25,21 +26,19 @@ const ProjectCard = ({
         className="h-64 sm:h-52 sm:w-full sm:object-cover "
         src={img}
         alt={alt}
-        width={256}
-        height={500}
       />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-gray-700 text-base">{description}</p>
       </div>
       <div className="px-6 pb-2 space-x-3 h-10">
-        <button>
-          <a href={liveLink}>
+        <button title="Go To Site">
+          <a href={liveLink} title="live application">
             <CgWebsite style={{ height: "2em", width: "2em" }} />
           </a>
         </button>
-        <button className="h-10">
-          <a href={githubLink}>
+        <button title="Source Code">
+          <a href={githubLink} title="Github source code">
             <AiOutlineGithub style={{ height: "2em", width: "2em" }} />
           </a>
         </button>
